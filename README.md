@@ -44,12 +44,10 @@ new_challenge(template = "fr")
 
 You will obtain a ready-to-use challenge in the folder `Dropbox/mychallenge` containing:
 
-Name | Description
-------------- | -------------
-`challenge.rmd` | Template R Markdown script for the webpage.
-`data` | Directory of the data containing `data_train` and `data_test` datasets.
-`submissions` | Directory of the submissions. It will contain one subdirectory per team where they can submit their submissions. The subdirectories are shared with Dropbox.
-`history` | Directory where the submissions history is stored.
+- `challenge.rmd`: template R Markdown script for the webpage.
+- `data`: directory of the data containing `data_train` and `data_test` datasets.
+- `submissions`: directory of the submissions. It will contain one subdirectory per team where they can submit their submissions. The subdirectories are shared with Dropbox.
+- `history`: directory where the submissions history is stored.
 
 
 The default challenge provided is a binary classification problem on the [German Credit Card](https://goo.gl/ndMhNw) dataset.
@@ -68,7 +66,7 @@ To complete the installation:
     new_team("team_foo", "team_bar")
     ```
 
-2. Render the html page:
+2. Render the HTML page:
     ```R
     ?publish
     publish()
@@ -76,7 +74,7 @@ To complete the installation:
     Use the `output_dir` argument to change the output directory.
     Make sure the output HTML file is rendered, e.g. using [GitHub Pages](https://pages.github.com/).
 
-3. Give the URL to your `challenge.html` file to the participants.
+3. Give the URL to your HTML file to the participants.
     
 4. Refresh the webpage by repeating step 2 on a regular basis. See below for automating this step.
 
@@ -84,15 +82,13 @@ From now on, a fully autonomous challenge system is set up requiring no further
 administration. With each update, the program automatically performs the following
 tasks using the functions available in our package:
 
-Name | Description
-------------- | -------------
-[`store_new_submissions`](https://adrtod.github.io/rchallenge/reference/store_new_submissions.html) | Reads submitted files and save new files in the history.
-[`print_readerr`](https://adrtod.github.io/rchallenge/reference/print_readerr.html) | Displays any read errors.
-[`compute_metrics`](https://adrtod.github.io/rchallenge/reference/compute_metrics.html) | Calculates the scores for each submission in the history.
-[`get_best`](https://adrtod.github.io/rchallenge/reference/get_best.html) | Gets the highest score per team.
-[`print_leaderboard`](https://adrtod.github.io/rchallenge/reference/print_leaderboard.html) | Displays the leaderboard.
-[`plot_history`](https://adrtod.github.io/rchallenge/reference/plot_history.html) | Plots a chart of score evolution per team.
-[`plot_activity`](https://adrtod.github.io/rchallenge/reference/plot_activity.html) | Plots a chart of activity per team.
+- [`store_new_submissions`](https://adrtod.github.io/rchallenge/reference/store_new_submissions.html) reads submitted files and save new files in the history.
+- [`print_readerr`](https://adrtod.github.io/rchallenge/reference/print_readerr.html) displays any read errors.
+- [`compute_metrics`](https://adrtod.github.io/rchallenge/reference/compute_metrics.html) calculates the scores for each submission in the history.
+- [`get_best`](https://adrtod.github.io/rchallenge/reference/get_best.html) gets the highest score per team.
+- [`print_leaderboard`](https://adrtod.github.io/rchallenge/reference/print_leaderboard.html) displays the leaderboard.
+- [`plot_history`](https://adrtod.github.io/rchallenge/reference/plot_history.html) plots a chart of score evolution per team.
+- [`plot_activity`](https://adrtod.github.io/rchallenge/reference/plot_activity.html) plots a chart of activity per team.
 
 ## Automating the updates
 
@@ -105,6 +101,11 @@ You can setup the following line to your [crontab](https://en.wikipedia.org/wiki
 This will render a HTML webpage every hour.
 Use the `output_dir` argument to change the output directory.
 
+If your challenge is hosted on a Github repository you can automate the push:
+```
+0 * * * * cd ~/Dropbox/mychallenge && Rscript -e 'rchallenge::publish()' && git commit -m "update html" index.html && git push
+```
+
 You might have to add the path to Rscript and pandoc at the beginning of your crontab:
 ```
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
@@ -114,6 +115,7 @@ Depending on your system or pandoc version you might also have to explicitly add
 ```
 0 * * * * Rscript -e 'rchallenge::publish("~/Dropbox/mychallenge/challenge.rmd", encoding = "utf8")'
 ```
+
 
 ### Windows
 
@@ -127,7 +129,7 @@ You can use the [Task Scheduler](https://technet.microsoft.com/en-us/library/cc7
 - The rendering of HTML content provided by Dropbox will be discontinued from the 3rd October 2016 for Basic users and the 1st September 2017 for Pro and Business users. See <https://www.dropbox.com/help/16>. Alternatively, [GitHub Pages](https://pages.github.com/) provide an easy HTML publishing solution via a simple GitHub repository.
 
 ## Examples
-- [My own challenge](http://adrien.tspace.fr/challenge_mimse2014.html) (in french) given to Master students at the University of Bordeaux.
+- [My own challenge](https://adrtod.github.io/challenge-mimse2014/) (in french) given to Master students at the University of Bordeaux.
 
 - [A classification and variable selection problem](https://dl.dropboxusercontent.com/u/50849929/challenge_fr.html) (in french) given by Robin Genuer (Bordeaux).
 
@@ -144,7 +146,6 @@ for data science challenges.
 The **rchallenge** package is licensed under the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html).
 
 ## To do list
-- [ ] common leaderboard for several metrics
 - [ ] do not take baseline into account in ranking
 - [ ] examples, tests, vignettes
 - [ ] interactive plots with `ggvis`
