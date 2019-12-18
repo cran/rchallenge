@@ -1,6 +1,7 @@
 rchallenge
 ==========
 [![Build Status](https://travis-ci.org/adrtod/rchallenge.svg)](https://travis-ci.org/adrtod/rchallenge)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rchallenge)](https://cran.r-project.org/package=rchallenge)
 [![GPLv2 License](https://img.shields.io/badge/license-GPLv2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 
 The **rchallenge** R package provides a simple data science competition system using [R Markdown](http://rmarkdown.rstudio.com/) 
@@ -26,7 +27,7 @@ or install the latest development version from [GitHub](https://github.com/adrto
 devtools::install_github("adrtod/rchallenge")
 ```
 
-A recent version of [pandoc](http://johnmacfarlane.net/pandoc/) (>= 1.12.3) is also required. See the [pandoc installation instructions](https://github.com/rstudio/rmarkdown/blob/master/PANDOC.md) for details on installing pandoc for your platform.
+A recent version of [pandoc](https://pandoc.org/) (>= 1.12.3) is also required. See the [pandoc installation instructions](https://rmarkdown.rstudio.com/docs/articles/pandoc.html) for details on installing pandoc for your platform.
 
 ## Getting started
 Install a new challenge in `Dropbox/mychallenge`:
@@ -50,7 +51,7 @@ You will obtain a ready-to-use challenge in the folder `Dropbox/mychallenge` con
 - `history`: directory where the submissions history is stored.
 
 
-The default challenge provided is a binary classification problem on the [German Credit Card](https://goo.gl/ndMhNw) dataset.
+The default challenge provided is a binary classification problem on the [German Credit](https://goo.gl/ndMhNw) data set.
 
 You can easily customize the challenge in two ways:
 
@@ -127,11 +128,12 @@ You can use the [Task Scheduler](https://technet.microsoft.com/en-us/library/cc7
 ## Issues
 
 - The rendering of HTML content provided by Dropbox will be discontinued from the 3rd October 2016 for Basic users and the 1st September 2017 for Pro and Business users. See <https://www.dropbox.com/help/16>. Alternatively, [GitHub Pages](https://pages.github.com/) provide an easy HTML publishing solution via a simple GitHub repository.
+- version 1.16 of pandoc fails to fetch font awesome css, see <https://github.com/jgm/pandoc/issues/2737>.
 
 ## Examples
-- [My own challenge](https://adrtod.github.io/challenge-mimse2014/) (in french) given to Master students at the University of Bordeaux.
+- [Credit approval](https://adrtod.github.io/challenge-mimse2014/) (in french) by Adrien Todeschini (Bordeaux).
 
-- [A classification and variable selection problem](https://dl.dropboxusercontent.com/u/50849929/challenge_fr.html) (in french) given by Robin Genuer (Bordeaux).
+- [Spam filter](https://chavent.github.io/challenge-mmas/) (in french) by Marie Chavent (Bordeaux).
 
 Please [contact me](https://adrtod.github.io/) to add yours.
 
@@ -139,9 +141,6 @@ Please [contact me](https://adrtod.github.io/) to add yours.
 Copyright (C) 2014-2015 [Adrien Todeschini](https://adrtod.github.io/).
 
 Contributions from [Robin Genuer](http://robin.genuer.fr/).
-
-Design inspired by [Datascience.net](https://www.datascience.net/), a french platform
-for data science challenges.
 
 The **rchallenge** package is licensed under the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html).
 
