@@ -1,13 +1,13 @@
-1d55bf76715934d3c726e28bc1ff4e46 *DESCRIPTION
+e498d244d502c64d5ccd1fcb69cee1c6 *DESCRIPTION
 369569a36272aedc5fb8c29cd1e2596d *NAMESPACE
-c3d8ba7ba458f84312d7706f9c8c47c8 *NEWS.md
-5c97018b1540269994d361ebb9818c15 *R/data.r
+2c5684bebc7effe4a5993ee1e970877c *NEWS.md
+26a4995eb442bbdc179cfffbe91781cd *R/data.r
 85e345401ac2e470517b0ed5dc88c1b3 *R/display.r
 4f8db0d3c25a1872f397491de1944694 *R/new.r
 30a06a2396ca53f657703c62f2566d99 *R/plots.r
 3d6408ebb83bef8e886059231cc36e05 *R/rchallenge.r
 26fa918c47b916903a163545fd848e57 *R/update.r
-3b22c6f782928eeeb9232b17c1f144af *README.md
+9eb37c4b1b5be3ad5c25048e773fcc72 *README.md
 7b49dde563c62b73064b8cb11b67d3e1 *data/german.rda
 bc19c5bd49bba7c239cc9022405ad978 *inst/template/challenge_en.rmd
 63b1016292581e78304d77fa7d5d07b6 *inst/template/challenge_fr.rmd
@@ -15,7 +15,7 @@ bc19c5bd49bba7c239cc9022405ad978 *inst/template/challenge_en.rmd
 6d59c4419dc3f2f93668569bdc70ef0a *man/countdown.Rd
 87bffee6f45bbd162800a073ee51632d *man/data_partition.Rd
 806b60d1d4ee92bd8017d655162993a9 *man/data_split.Rd
-98adba227bf3db8ce840363450b50828 *man/german.Rd
+01171749628cccee7da502cef21a70d8 *man/german.Rd
 6c7ea1e7593e262e3ae61b9422baa7be *man/get_best.Rd
 c402090f559e5d2d308711a2776178e3 *man/get_data.Rd
 4a1d11e65b01a33b0fafb59109094906 *man/html_img.Rd
@@ -29,7 +29,9 @@ ee56a8a02d1acdf0d74c9fbd480809c2 *man/print_leaderboard.Rd
 6028f8d53e0aee29e7b2d94002b9eee9 *man/print_readerr.Rd
 f90f79afa0174b9766fb20bf82e35e80 *man/publish.Rd
 402315c9988b7751e45de167c6cb8095 *man/rchallenge-defunct.Rd
-1fa375a2f1f354720a81d20a41ce63f4 *man/rchallenge-package.Rd
+932ac05247e732b22b51504e86ad2ed9 *man/rchallenge-package.Rd
 a3487b407c5cce407da6ea88b99f3887 *man/store_new_submissions.Rd
 029e7511f7e688dab069fb5da5fdaa29 *man/str_rank.Rd
 aa9902fe96a791a04f02fcb1fb7c7096 *man/update_rank_diff.Rd
+5aab822fb4a79ff08af349a08d11b419 *tests/testthat.R
+e834808e874ffd048b6909a7b6c7a7ef *tests/testthat/test-pandoc.R
