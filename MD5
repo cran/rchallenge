@@ -1,9 +1,9 @@
-c32e7ade5bafd23a6fcd7a0fbfa110e4 *DESCRIPTION
+66e6d41bcb290850039bf53bd119d43d *DESCRIPTION
 369569a36272aedc5fb8c29cd1e2596d *NAMESPACE
-ffd09338b2a7ee27118d8ac2effce0b2 *NEWS.md
+d7d7b48af68014a77bf0fea46612b459 *NEWS.md
 f1c43640013edb80970d84ebee2ea68c *R/data.r
 4d45bf192c509ab64f144e8884f32e93 *R/display.r
-f883e3abb87a606e949e9069a5a7eb1a *R/new.r
+4423d63df9f92d6bfb0be1cfa008dc8d *R/new.r
 3b3524aed25bb6204b7112216c68aea1 *R/plots.r
 c7211588ede45b88cd7aada76bf56300 *R/rchallenge.r
 8ca1ba9bcb5532221840ee6d4e4603ea *R/update.r
@@ -27,11 +27,11 @@ ec49fa9b540f3b6fa8a03656f687e9f2 *man/new_challenge.Rd
 6be0d3f84d042b3d7310355634a64789 *man/plot_history.Rd
 ee56a8a02d1acdf0d74c9fbd480809c2 *man/print_leaderboard.Rd
 6028f8d53e0aee29e7b2d94002b9eee9 *man/print_readerr.Rd
-6f7a4d72e285b06f679a0c6257d9268e *man/publish.Rd
+3fb18fb8cb189d7516332e355fa83c25 *man/publish.Rd
 402315c9988b7751e45de167c6cb8095 *man/rchallenge-defunct.Rd
 e7c5b9fc1db89cf6ceca0743680e8115 *man/rchallenge-package.Rd
 898ebc5eb72e63e467632483edaa66ad *man/store_new_submissions.Rd
 029e7511f7e688dab069fb5da5fdaa29 *man/str_rank.Rd
 aa9902fe96a791a04f02fcb1fb7c7096 *man/update_rank_diff.Rd
 5aab822fb4a79ff08af349a08d11b419 *tests/testthat.R
-e834808e874ffd048b6909a7b6c7a7ef *tests/testthat/test-pandoc.R
+e48e8d2cfa1deda6ac880dd2be54fafa *tests/testthat/test-pandoc.R
